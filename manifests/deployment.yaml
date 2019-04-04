@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
         - name: sampleapp
-          image: sampleapp
+          image: desattiraksacr.azurecr.io/go-sample
           ports:
           - containerPort: 8080
