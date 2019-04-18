@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: rakolmsgosampleapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rakolmsgosampleapp 
+    spec:
+      containers:
+        - name: rakolmsgosampleapp 
+          image: desattiraksacr.azurecr.io/rakolmsgosampleapp 
+          ports:
+          - containerPort: 80
